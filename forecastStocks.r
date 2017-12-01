@@ -5,7 +5,7 @@ args <- commandArgs(trailingOnly = TRUE)
 daystoforecast <- as.integer(args[1])
 
 # Perform the forecast on multiple time series and try to save it as a csv file with the forecasted data
-
+# Comment added by Guy2
 stockData = read.csv('~/output/stockData.csv')
 stockData <- transform(stockData,newpriced = stockData$priced/1000000 )
 # dataseries.ts <- ts(ordata[,4],start=c(2017,9), frequency = 1)
