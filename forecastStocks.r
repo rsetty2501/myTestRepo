@@ -1,6 +1,7 @@
 require(forecast)
 
 args <- commandArgs(trailingOnly = TRUE)
+# The days to forecast is passed as an argument from the Apache spark application
 daystoforecast <- as.integer(args[1])
 
 # Perform the forecast on multiple time series and try to save it as a csv file with the forecasted data
