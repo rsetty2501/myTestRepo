@@ -18,6 +18,7 @@ firstDate <- lapply(split_stockData, function(x) head(sort(x$Date)))
 firstDate <- lapply(firstDate, function(x) x[1])
 dateLength <- lapply(split_stockData, function(x) length(sort(x$Date)))
 
+# Date sequence function
 seqDates <- function(fdate, Datelength){
   seq(as.Date(toString(fdate), format = "%Y-%m-%d"),
       by = "days", length = Datelength + daystoforecast)
